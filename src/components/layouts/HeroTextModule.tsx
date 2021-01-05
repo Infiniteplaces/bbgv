@@ -25,7 +25,7 @@ const HeroTextModule: React.FC<Props> = ({
   return (
     <div
       className={cx(
-        `HeroTextModule HeroTextModule--style-${variant} bg-color-${variant} site-max-width site-padding-x mxauto px_75 md:px1_5 xl:px15 py6 md:py7_5 ${fontColor}`
+        `HeroTextModule HeroTextModule--style-${variant} bg-color-${variant} site-max-width site-padding-x mxauto px_75 md:px1_5 xl:px15 pt6 pb_75 md:py7_5 ${fontColor}`
       )}
     >
       <span
@@ -59,7 +59,7 @@ const HeroTextModule: React.FC<Props> = ({
       {briefParagraph && (
         <div
           className={cx(
-            `HeroTextModule__paragraph HeroTextModule--style-${variant}__paragraph secondary-sm col-8 md:col-5 pt3_75 md:pt5`
+            `HeroTextModule__paragraph HeroTextModule--style-${variant}__paragraph secondary-sm col-8 md:col-5 pt3_75`
           )}
         >
           <PortableText blocks={briefParagraph} />

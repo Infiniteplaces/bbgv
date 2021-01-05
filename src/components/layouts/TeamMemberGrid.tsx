@@ -19,7 +19,7 @@ const TeamMemberGrid: React.FC<Props> = ({ teamMemberGrids, className }) => {
           className="TeamMemberGrid__container col-12"
         >
           {teamMemberGrid.heading && (
-            <div className="TeamMemberGrid__heading pb2_25 md:pb3_75 color-charcoal primary-sm">
+            <div className="TeamMemberGrid__heading pb2_25 md:pb2_25 color-charcoal primary-sm">
               {teamMemberGrid.heading}
             </div>
           )}

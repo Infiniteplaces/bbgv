@@ -1,6 +1,4 @@
 .PortfolioListing {
-  padding-top: 8.625rem;
-
   @include media('lg-up') {
     padding-left: $site-padding-x-desktop;
     padding-right: $site-padding-x-desktop;
