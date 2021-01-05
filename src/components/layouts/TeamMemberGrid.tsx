@@ -24,7 +24,7 @@ const TeamMemberGrid: React.FC<Props> = ({ teamMemberGrids, className }) => {
             </div>
           )}
 
-          <div className="TeamMemberGrid__grid-container pb2_25 md:pb3_75">
+          <div className="TeamMemberGrid__grid-container pb2_25 md:pb6">
             {teamMemberGrid.teamMembers.map((teamMember: TeamMember) => (
               <div
                 key={`TeamMemberGrid__${teamMember.firstName}`}
