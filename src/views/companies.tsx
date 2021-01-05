@@ -17,7 +17,7 @@ const CompaniesView: FC<Props> = (props) => {
   const { hero, seo, portfolioListing, investmentsList, contact } = model;
 
   return (
-    <div className="CompaniesView primary-xxl">
+    <div className="CompaniesView">
       <Meta seo={seo} title={hero.title} />
       <HeroTextModule
         variant="lilac"

@@ -27,7 +27,7 @@ const AboutView: FC<Props> = (props) => {
   } = model;
 
   return (
-    <div className="AboutView primary-xxl">
+    <div className="AboutView">
       <Meta seo={seo} title={hero.title} />
       <HeroTextModule
         variant="nutella"

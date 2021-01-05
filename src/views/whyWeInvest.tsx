@@ -18,7 +18,7 @@ const WhyWeInvestView: FC<Props> = (props) => {
   const { hero, seo, thesis, investmentHeading, investmentParagraphs, apply, statistics } = model;
 
   return (
-    <div className="ThesisView primary-xxl">
+    <div className="ThesisView">
       <Meta seo={seo} title={hero.title} />
       <HeroTextModule
         variant="mulberry"

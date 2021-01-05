@@ -30,7 +30,7 @@ const HomeView: FC<Props> = (props) => {
   } = model;
 
   return (
-    <div className="HomeView primary-xxl page-style--margin-top">
+    <div className="HomeView page-style--margin-top">
       <Meta seo={seo} />
       <HomeHero headline={hero.headline} founders={hero.founders} />
       <TextModule
