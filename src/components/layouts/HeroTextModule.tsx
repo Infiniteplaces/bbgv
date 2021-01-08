@@ -33,12 +33,9 @@ const HeroTextModule: React.FC<Props> = ({
       )}
     >
       <span
-        className={cx(
-          'HeroTextModule__title nowrap primary-sm pr3_75 vertical-align-middle inline-flex',
-          {
-            'color-lilac': variant === 'mulberry',
-          }
-        )}
+        className={cx('HeroTextModule__title nowrap primary-sm pr3_75 vertical-align-middle', {
+          'color-lilac': variant === 'mulberry',
+        })}
       >
         {title}
       </span>
@@ -49,59 +46,57 @@ const HeroTextModule: React.FC<Props> = ({
       >
         <PortableText blocks={heading} />
       </span>
-      <div className="HeroTextModule__intro-line-container">
-        <span
-          className={cx(
-            'HeroTextModule__intro-line nowrap primary-sm pr3_75 sm:px2_25 vertical-align-middle',
-            {
-              'color-lilac': variant === 'mulberry',
-            }
-          )}
-        >
-          {introLine}
-        </span>
-        <span>
-          {introBylineLinks.map((link: MenuLink, i: number) => {
-            return (
-              <>
-                <HashLink
-                  key={link.link}
-                  className={cx(
-                    `HeroTextModule__intro-byline HeroTextModule--style-${variant}__intro-byline primary-xxl vertical-align-middle transition-shorter bg-color-transparent text-decoration-none`,
-                    {
-                      'color-white hover-color-lilac': variant === 'mulberry',
-                      'color-charcoal hover-color-chalk':
-                        variant === 'nutella' || variant === 'lilac',
-                    }
-                  )}
-                  smooth
-                  to={link.link}
+      <span
+        className={cx(
+          'HeroTextModule__intro-line nowrap primary-sm pr3_75 sm:px2_25 vertical-align-middle',
+          {
+            'color-lilac': variant === 'mulberry',
+          }
+        )}
+      >
+        {introLine}
+      </span>
+      <span>
+        {introBylineLinks.map((link: MenuLink, i: number) => {
+          return (
+            <>
+              <HashLink
+                key={link.link}
+                className={cx(
+                  `HeroTextModule__intro-byline HeroTextModule--style-${variant}__intro-byline primary-xxl vertical-align-middle transition-shorter bg-color-transparent text-decoration-none`,
+                  {
+                    'color-white hover-color-lilac': variant === 'mulberry',
+                    'color-charcoal hover-color-chalk':
+                      variant === 'nutella' || variant === 'lilac',
+                  }
+                )}
+                smooth
+                to={link.link}
+              >
+                <span
+                  className={cx('hyphens--style-mobile', {
+                    'pr_5 lg:pr_75': !(
+                      i !== introBylineLinks.length - 1 && introBylineLinks.length !== 2
+                    ),
+                  })}
                 >
-                  <span
-                    className={cx('hyphens--style-mobilee', {
-                      'pr_5 lg:pr_75': !(
-                        i !== introBylineLinks.length - 1 && introBylineLinks.length !== 2
-                      ),
-                    })}
-                  >
-                    {link.label}
-                  </span>
-                </HashLink>
-                {i !== introBylineLinks.length - 1 && introBylineLinks.length !== 2 && (
-                  <span className="vertical-align-middle primary-xxl pr_5 lg:pr_75">
-                    {Language.t('Global.comma')}
-                  </span>
-                )}
-                {i !== introBylineLinks.length - 1 && i === introBylineLinks.length - 2 && (
-                  <span className="vertical-align-middle primary-xxl pr_5 lg:pr_75">
-                    {Language.t('Global.and')}
-                  </span>
-                )}
-              </>
-            );
-          })}
-        </span>
-      </div>
+                  {link.label}
+                </span>
+              </HashLink>
+              {i !== introBylineLinks.length - 1 && introBylineLinks.length !== 2 && (
+                <span className="vertical-align-middle primary-xxl pr_5 lg:pr_75">
+                  {Language.t('Global.comma')}
+                </span>
+              )}
+              {i !== introBylineLinks.length - 1 && i === introBylineLinks.length - 2 && (
+                <span className="vertical-align-middle primary-xxl pr_5 lg:pr_75">
+                  {Language.t('Global.and')}
+                </span>
+              )}
+            </>
+          );
+        })}
+      </span>
 
       {briefParagraph && (
         <div

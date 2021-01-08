@@ -70,11 +70,12 @@ const HomeHero: React.FC<Props> = ({ mediaQuery, founders, headline }) => {
       </span>
 
       <span className="HomeHero__headline hyphens color-mulberry">{headline}</span>
-      <span className="color-charcoal primary-sm px2_25 md:px3_75 vertical-align-middle nowrap">
-        {Language.t('Home.hero.ourFounders')}
-      </span>
+
       {!breakpointIsMdUp ? (
-        <span className="debug inline">
+        <span className="inline">
+          <span className="color-charcoal primary-sm px2_25 md:px3_75 vertical-align-middle nowrap">
+            {Language.t('Home.hero.ourFounders')}
+          </span>
           <span className="primary-xxl">
             {founders.map((founder: Founder, index: number) => (
               <span key={founder.firstName} className="color-charcoal HomeHero__founder inline">
@@ -101,6 +102,9 @@ const HomeHero: React.FC<Props> = ({ mediaQuery, founders, headline }) => {
         </span>
       ) : (
         <span>
+          <span className="color-charcoal primary-sm px2_25 md:px3_75 vertical-align-middle nowrap">
+            {Language.t('Home.hero.ourFounders')}
+          </span>
           <span className="color-charcoal primary-xxl">
             {founders.map((founder: Founder, index: number) => (
               <span key={founder.firstName} className="HomeHero__founder relative">
