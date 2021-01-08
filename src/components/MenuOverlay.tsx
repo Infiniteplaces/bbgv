@@ -36,24 +36,29 @@ const MenuOverlay: React.FC<Props> = ({ closeMenu, globalSettings, isOpen, media
     >
       <div
         className={cx(
-          'MenuOverlay__section-one bg-color-lilac-darker lg:col-6 col-12 flex flex-col lg:px3_75 lg:pb3_75 lg:pt15 transition-medium',
+          'MenuOverlay__section-one bg-color-lilac-darker lg:col-6 col-12 flex flex-col lg:px3_75 lg:pb3_75 transition-medium',
           {
             'MenuOverlay__section-one--active': isOpen,
           }
         )}
       >
-        <div className="MenuOverlay__section-one-inner-container h100 flex flex-col justify-between">
+        <div className="MenuOverlay__section-one-inner-container h100 flex flex-col">
           <div
-            className={cx('MenuOverlay__heading hyphens opacity-0 col-12 primary-xl', {
-              none: !breakpointIsLgUp,
-              'MenuOverlay__heading--active': isOpen,
-            })}
+            className={cx(
+              'MenuOverlay__heading hyphens opacity-0 col-12 primary-xl flex flex-col justify-center h100',
+              {
+                none: !breakpointIsLgUp,
+                'MenuOverlay__heading--active': isOpen,
+              }
+            )}
           >
-            <span className="MenuOverlay__heading-indentation"></span>
-            <PortableText blocks={menu.heading} />
+            <span>
+              <span className="MenuOverlay__heading-indentation inline"></span>
+              <PortableText blocks={menu.heading} />
+            </span>
           </div>
 
-          <div className="MenuOverlay__newsletter flex none lg:block secondary-bold-sm">
+          <div className="MenuOverlay__newsletter flex none lg:block secondary-bold-sm items-end">
             <div
               className={cx('MenuOverlay__newsletter-inner-container opacity-0', {
                 'MenuOverlay__newsletter-inner-container--active': isOpen,
@@ -67,7 +72,7 @@ const MenuOverlay: React.FC<Props> = ({ closeMenu, globalSettings, isOpen, media
 
       <div
         className={cx(
-          'MenuOverlay__section-two bg-color-lilac-lighter py3 px_75 md:pr_75 lg:pr3 lg:pt15 lg:col-4 flex flex-col transition-medium',
+          'MenuOverlay__section-two bg-color-lilac-lighter py3 md:py0 px_75 md:pr_75 lg:pr3 lg:col-4 flex flex-col transition-medium justify-center',
           {
             'MenuOverlay__section-two--active': isOpen,
           }
@@ -97,7 +102,7 @@ const MenuOverlay: React.FC<Props> = ({ closeMenu, globalSettings, isOpen, media
 
       <div
         className={cx(
-          'MenuOverlay__section-three bg-color-lilac-lightest pt1_5 pb5 px_75 lg:px0 lg:pt15 lg:col-2 flex flex-col transition-medium',
+          'MenuOverlay__section-three justify-center bg-color-lilac-lightest pt1_5 md:pt0 pb5 px_75 lg:px0 lg:col-2 flex flex-col transition-medium',
           {
             'MenuOverlay__section-three--active': isOpen,
           }

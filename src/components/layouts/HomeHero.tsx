@@ -74,7 +74,7 @@ const HomeHero: React.FC<Props> = ({ mediaQuery, founders, headline }) => {
         {Language.t('Home.hero.ourFounders')}
       </span>
       {!breakpointIsMdUp ? (
-        <span>
+        <span className="debug inline">
           <span className="primary-xxl">
             {founders.map((founder: Founder, index: number) => (
               <span key={founder.firstName} className="color-charcoal HomeHero__founder inline">
