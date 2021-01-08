@@ -33,6 +33,14 @@ const Nav: React.FC<Props> = (props) => {
   const location = useLocation();
   const isHome = location.pathname === RouteMap.HOME.path;
 
+  const handleNavLogoClick = () => {
+    if (menuIsOpen) {
+      onCloseMenu();
+    }
+
+    return null;
+  };
+
   const handleNavLogo = useCallback(() => {
     /* Determines if the current scroll position is before of after the logo in the Home Hero Module **/
     const logo = document.querySelector(`.${Classes.homeHeroLogo}`);
@@ -95,7 +103,7 @@ const Nav: React.FC<Props> = (props) => {
   }, [location, handleNavLogo]);
 
   return (
-    <nav className="Nav site-padding-x mxauto z-nav flex items-center justify-between fixed w100 t0 l0">
+    <nav className="Nav mxauto site-padding-x z-nav flex items-center justify-between fixed w100 t0 l0">
       <Button
         containerClassName={cx(
           'Nav__logo-outer-container opacity-0 events-none transition-shortest',
@@ -116,6 +124,7 @@ const Nav: React.FC<Props> = (props) => {
         wrap={false}
         onMouseEnter={() => setHoverLogo(true)}
         onMouseLeave={() => setHoverLogo(false)}
+        onClick={handleNavLogoClick}
       >
         {isHome && showNavLogo ? (
           <span>

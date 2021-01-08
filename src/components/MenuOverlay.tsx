@@ -83,7 +83,7 @@ const MenuOverlay: React.FC<Props> = ({ closeMenu, globalSettings, isOpen, media
               onClick={closeMenu}
               key={`MenuOverlay-${link.link}`}
               wrap={true}
-              className="MenuOverlay__menu-link-button--style-medium inline-flex items-center text-decoration-none primary-lg vertical-align-middle color-charcoal mb_25"
+              className="MenuOverlay__menu-link-button--style-medium inline-flex items-center text-decoration-none primary-lg vertical-align-middle color-charcoal mb_5"
               to={link.link}
               ariaLabel={Language.t('Global.generalButtonAriaLabel', {
                 link: link.label,
@@ -118,7 +118,7 @@ const MenuOverlay: React.FC<Props> = ({ closeMenu, globalSettings, isOpen, media
               wrap={true}
               openInNewTab={true}
               className={cx(
-                'transition-shorter hover-lighten-charcoal inline-flex items-center text-decoration-none primary-md vertical-align-middle color-charcoal mb_25'
+                'transition-shorter hover-lighten-charcoal inline-flex items-center text-decoration-none primary-md vertical-align-middle color-charcoal mb_5'
               )}
               to={link.link}
               ariaLabel={Language.t('Global.generalButtonAriaLabel', {

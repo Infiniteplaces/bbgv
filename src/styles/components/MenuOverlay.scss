@@ -21,7 +21,7 @@
     }
 
     @include media('lg-up') {
-      padding-left: 5%;
+      padding-left: 4%;
       transform: translate3d(-30rem, 0, 0);
 
       &--active {

@@ -10,7 +10,7 @@ import { Status } from 'types';
 import { intializeApplication } from 'state/actions/applicationActions';
 import { setMenuOpen, setMenuClosed } from 'state/actions/uiActions';
 
-import { Button } from 'components/base';
+import ScrollToTop from 'components/ScrollToTop';
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 import MenuOverlay from 'components/MenuOverlay';
@@ -40,6 +40,7 @@ export default function App() {
   return (
     <main className="App">
       <Router>
+        <ScrollToTop />
         {globalSettings && 'cookieConsentText' in globalSettings && (
           <CookieConsent
             content={globalSettings.cookieConsentText}
