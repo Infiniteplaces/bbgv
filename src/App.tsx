@@ -8,6 +8,7 @@ import 'styles/App.scss';
 
 import { Status } from 'types';
 import { intializeApplication } from 'state/actions/applicationActions';
+import { setTheme } from 'state/actions/applicationActions';
 import { setMenuOpen, setMenuClosed } from 'state/actions/uiActions';
 
 import ScrollToTop from 'components/ScrollToTop';
@@ -50,7 +51,13 @@ export default function App() {
             dismissButtonLabel={Language.t('CookieConsent.acceptButton.label')}
           />
         )}
-        <Nav theme={theme} menuIsOpen={menuIsOpen} onOpenMenu={openMenu} onCloseMenu={closeMenu} />
+        <Nav
+          setTheme={setTheme}
+          theme={theme}
+          menuIsOpen={menuIsOpen}
+          onOpenMenu={openMenu}
+          onCloseMenu={closeMenu}
+        />
         {'menu' in globalSettings && (
           <MenuOverlay globalSettings={globalSettings} closeMenu={closeMenu} isOpen={menuIsOpen} />
         )}
