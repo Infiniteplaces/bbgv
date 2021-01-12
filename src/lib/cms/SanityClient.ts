@@ -1,7 +1,7 @@
 import SanityClient from '@sanity/client';
 import hashify from 'object-hash';
 
-const ProjectId = 'z4thcwkh';
+const ProjectId = 'zx06oci2';
 
 const Sanity = SanityClient({
   projectId: ProjectId,

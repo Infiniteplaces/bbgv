@@ -1,18 +1,18 @@
-$abcdiatype: 'ABCDiatype-Regular', 'Arial', sans-serif;
-$abcdiatype-bold: 'ABCDiatype-Bold', 'Arial', sans-serif;
-$benton: 'Benton', 'Oswald', sans-serif;
+$univers: 'UniversLTPro-Ex', 'Arial', sans-serif;
+$univers-bold: 'UniversLTPro-BoldExt', 'Arial', sans-serif;
+$times: 'Times_Now_ExtraLight', 'Times New Roman', serif;
 
 /** Families */
 .font-primary {
-  font-family: $benton;
+  font-family: $times;
 }
 
 .font-secondary {
-  font-family: $abcdiatype;
+  font-family: $univers;
 }
 
 .font-secondary-bold {
-  font-family: $abcdiatype-bold;
+  font-family: $univers-bold;
 }
 
 /** Styles */
@@ -24,7 +24,7 @@ $benton: 'Benton', 'Oswald', sans-serif;
 /** Sizes */
 
 .primary-xxl {
-  font-family: $benton;
+  font-family: $times;
   font-size: 3.125rem;
   line-height: 3.125rem;
 
@@ -35,7 +35,7 @@ $benton: 'Benton', 'Oswald', sans-serif;
 }
 
 .primary-xl {
-  font-family: $benton;
+  font-family: $times;
   font-size: 2.25rem;
   line-height: 2.3625rem;
 
@@ -46,7 +46,7 @@ $benton: 'Benton', 'Oswald', sans-serif;
 }
 
 .primary-lg {
-  font-family: $benton;
+  font-family: $times;
   font-size: 2.25rem;
   line-height: 2.3625rem;
 
@@ -57,7 +57,7 @@ $benton: 'Benton', 'Oswald', sans-serif;
 }
 
 .primary-md {
-  font-family: $benton;
+  font-family: $times;
   font-size: 1.5rem;
   line-height: 1.65rem;
 
@@ -68,7 +68,7 @@ $benton: 'Benton', 'Oswald', sans-serif;
 }
 
 .primary-sm {
-  font-family: $benton;
+  font-family: $times;
   font-size: 0.875rem;
   line-height: 0.91875rem;
   letter-spacing: 0.0125rem;
@@ -80,13 +80,13 @@ $benton: 'Benton', 'Oswald', sans-serif;
 }
 
 .primary-xs {
-  font-family: $benton;
+  font-family: $times;
   font-size: 0.875rem;
   line-height: 0.91875rem;
 }
 
 .secondary-sm {
-  font-family: $abcdiatype;
+  font-family: $univers;
   font-size: 0.875rem;
   line-height: 1.0625rem;
 
@@ -97,21 +97,21 @@ $benton: 'Benton', 'Oswald', sans-serif;
 }
 
 .secondary-xs {
-  font-family: $abcdiatype;
+  font-family: $univers;
   font-size: 0.875rem;
   line-height: 1.0625rem;
   letter-spacing: 0;
 }
 
 .secondary-xxs {
-  font-family: $abcdiatype;
+  font-family: $univers;
   font-size: 0.625rem;
   line-height: 0.8125rem;
   letter-spacing: 0.01rem;
 }
 
 .secondary-bold-sm {
-  font-family: $abcdiatype-bold;
+  font-family: $univers-bold;
   font-size: 0.875rem;
   line-height: 1.0625rem;
 
@@ -122,14 +122,14 @@ $benton: 'Benton', 'Oswald', sans-serif;
 }
 
 .secondary-bold-xs {
-  font-family: $abcdiatype-bold;
+  font-family: $univers-bold;
   font-size: 0.875rem;
   line-height: 1.0625rem;
   letter-spacing: 0;
 }
 
 .secondary-bold-xxs {
-  font-family: $abcdiatype-bold;
+  font-family: $univers-bold;
   font-size: 0.625rem;
   line-height: 0.8125rem;
   letter-spacing: 0.01rem;
