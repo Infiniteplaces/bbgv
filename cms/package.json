@@ -1,10 +1,10 @@
 {
-  "name": "bbgv",
+  "name": "infiniteplaces",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Sanctuary Computer <dev@sanctuary.computer>",
+  "author": "Office Romance <computing.coop@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
@@ -29,6 +29,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanctuarycomputer/bbgv.git"
+    "url": "https://github.com/infiniteplaces/bbgv.git"
   }
 }

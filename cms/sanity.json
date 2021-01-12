@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "BBGV"
+    "name": "Infinite Places"
   },
   "plugins": [
     "@sanity/base",
