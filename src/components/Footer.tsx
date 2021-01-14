@@ -32,7 +32,7 @@ const Footer: React.FC<Props> = ({ globalSettings }) => {
         <div className="Footer__logo-container">
           <Img
             className="Footer__logo w100 h100"
-            src="/assets/images/bbgv-full-logo.svg"
+            src="/assets/images/gradient-logo.svg"
             alt={Language.t('Global.logoAltLabel')}
           />
         </div>
@@ -143,7 +143,7 @@ const Footer: React.FC<Props> = ({ globalSettings }) => {
             <div className="Footer__logo-container">
               <Img
                 className="Footer__logo w100 h100"
-                src="/assets/images/bbgv-full-logo.svg"
+                src="/assets/images/gradient-logo.svg"
                 alt={Language.t('Global.logoAltLabel')}
               />
             </div>
