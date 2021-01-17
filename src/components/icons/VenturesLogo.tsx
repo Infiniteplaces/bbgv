@@ -13,7 +13,7 @@ const VenturesLogo: React.FC<Props> = ({ color, className = '' }) => {
       className={className}
       width="100%"
       height="100%"
-      viewBox="0 0 50 20"
+      viewBox="0 0 245 40"
       fill="seagreen"
       xmlns="http://www.w3.org/2000/svg"
     >

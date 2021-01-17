@@ -13,7 +13,7 @@ const BBGVLogoShort: React.FC<Props> = ({ color, className = '' }) => {
       className={className}
       width="100"
       height="100"
-      viewBox="0 0 40 40"
+      viewBox="0 0 110 40"
       fill="black"
       xmlns="http://www.w3.org/2000/svg"
     >

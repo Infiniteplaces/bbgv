@@ -75,7 +75,7 @@
   },
   "Home": {
     "hero": {
-      "ourFounders": "Our founders",
+      "ourFounders": "Our research topics",
       "others": "others",
       "othersButtonAriaLabel": "View entire list of founders"
     }
@@ -99,11 +99,11 @@
       "news": "News"
     },
     "companies": {
-      "currentInvestments": "Current Investments",
-      "previousFunds": "Previous Funds"
+      "currentInvestments": "Current Projects",
+      "previousFunds": "Previous Projects"
     },
     "whyWeInvest": {
-      "ourThesis": "Our Thesis",
+      "ourThesis": "Our Manifesto",
       "investmentGuidelines": "Investment Guidelines",
       "howToApply": "How to apply"
     }
