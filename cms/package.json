@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Office Romance <computing.coop@gmail.com>",
+  "author": "Office Romance <info@romanceoffice.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
