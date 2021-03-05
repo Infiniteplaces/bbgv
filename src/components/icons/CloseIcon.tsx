@@ -15,7 +15,7 @@ const CloseIcon: React.FC<Props> = ({ color, className = '' }) => {
         x2="26.2673"
         y2="-1"
         transform="matrix(0.728297 0.685261 -0.579714 0.81482 1 2)"
-        stroke={HexColors[color]}
+        stroke={HexColors['nutella']}
         strokeWidth="2"
       />
       <line
@@ -23,7 +23,7 @@ const CloseIcon: React.FC<Props> = ({ color, className = '' }) => {
         x2="26.2673"
         y2="-1"
         transform="matrix(0.728297 -0.685261 0.579714 0.81482 1.86963 20)"
-        stroke={HexColors[color]}
+        stroke={HexColors['nutella']}
         strokeWidth="2"
       />
     </svg>
